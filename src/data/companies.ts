@@ -1,0 +1,98 @@
+// data/companies.ts
+import { Company } from './jobTypes';
+
+export const companies: Company[] = [
+  {
+    id: "company-1",
+    name: "TechNova Solutions",
+    industry: "Software Development",
+    description: "TechNova Solutions is a leading software development company specializing in web and mobile applications. We create innovative solutions for businesses of all sizes.",
+    website: "https://technova-solutions.com",
+    logoUrl: "/logos/technova.svg",
+    location: "San Francisco, CA",
+    size: "Medium",
+    founded: 2015,
+  },
+  {
+    id: "company-2",
+    name: "DataSphere Analytics",
+    industry: "Data Science",
+    description: "DataSphere Analytics provides cutting-edge data analysis and machine learning solutions to help businesses make data-driven decisions.",
+    website: "https://datasphere-analytics.com",
+    logoUrl: "/logos/datasphere.svg",
+    location: "Boston, MA",
+    size: "Small",
+    founded: 2018,
+  },
+  {
+    id: "company-3",
+    name: "CloudWave Systems",
+    industry: "Cloud Computing",
+    description: "CloudWave Systems offers cloud infrastructure and DevOps solutions to help businesses scale their operations efficiently.",
+    website: "https://cloudwave-systems.com",
+    logoUrl: "/logos/cloudwave.svg",
+    location: "Seattle, WA",
+    size: "Large",
+    founded: 2010,
+  },
+  {
+    id: "company-4",
+    name: "Quantum Innovations",
+    industry: "AI Research",
+    description: "Quantum Innovations is at the forefront of artificial intelligence research, developing next-generation AI solutions for complex problems.",
+    website: "https://quantum-innovations.com",
+    logoUrl: "/logos/quantum.svg",
+    location: "Austin, TX",
+    size: "Startup",
+    founded: 2021,
+  },
+  {
+    id: "company-5",
+    name: "Digital Frontier",
+    industry: "Digital Marketing",
+    description: "Digital Frontier helps businesses establish and grow their online presence through strategic digital marketing campaigns.",
+    website: "https://digital-frontier.com",
+    logoUrl: "/logos/digital-frontier.svg",
+    location: "New York, NY",
+    size: "Medium",
+    founded: 2016,
+  },
+  {
+    id: "company-6",
+    name: "SecureNet Cybersecurity",
+    industry: "Cybersecurity",
+    description: "SecureNet Cybersecurity provides comprehensive security solutions to protect businesses from cyber threats and data breaches.",
+    website: "https://securenet-cyber.com",
+    logoUrl: "/logos/securenet.svg",
+    location: "Washington, DC",
+    size: "Medium",
+    founded: 2014,
+  },
+  {
+    id: "company-7",
+    name: "MobileFirst Technologies",
+    industry: "Mobile Development",
+    description: "MobileFirst Technologies specializes in creating high-performance mobile applications for iOS and Android platforms.",
+    website: "https://mobilefirst-tech.com",
+    logoUrl: "/logos/mobilefirst.svg",
+    location: "Chicago, IL",
+    size: "Small",
+    founded: 2017,
+  },
+  {
+    id: "company-8",
+    name: "GlobalTech Enterprises",
+    industry: "IT Consulting",
+    description: "GlobalTech Enterprises offers comprehensive IT consulting services to help businesses optimize their technology infrastructure.",
+    website: "https://globaltech-enterprises.com",
+    logoUrl: "/logos/globaltech.svg",
+    location: "Remote",
+    size: "Enterprise",
+    founded: 2005,
+  },
+];
+
+// Helper function to get a company by ID
+export const getCompanyById = (id: string): Company | undefined => {
+  return companies.find(company => company.id === id);
+};
